@@ -214,7 +214,7 @@ class PatientRepository implements IPatientRepository {
   Future<List<PackageModel>> getPackages() async {
     try {
       final response = await _dio.get(
-        '/api/v1/packages',
+        '/api/v1/packages/',
         options: _getOptions(),
       );
 
